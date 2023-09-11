@@ -1,0 +1,22 @@
+# GetChildren3 testing file
+# Tests that the children nodes from a single node can be
+# Printed out (Case with duplicate edges).
+
+# Create a graph
+CreateGraph graph1
+
+# Add 3 nodes
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+
+# Add edges
+AddEdge graph1 n1 n2 e1
+AddEdge graph1 n1 n2 e1
+AddEdge graph1 n2 n3 e2
+AddEdge graph1 n3 n1 e3
+
+# Print the children from a node and the outgoing edges
+ListChildren graph1 n1
+ListChildren graph1 n2
+ListChildren graph1 n3

@@ -1,0 +1,13 @@
+# AddEdge Testing file
+# Tests that a graph can be created
+# Tests that an edge can be created
+
+# Create a graph
+CreateGraph graph1
+
+# Add a pair of nodes
+AddNode graph1 n1
+AddNode graph1 n2
+
+# Add an edge
+AddEdge graph1 n1 n2 e1

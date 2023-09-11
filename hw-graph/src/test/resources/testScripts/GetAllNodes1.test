@@ -1,0 +1,14 @@
+# GetAllNodes1 testing file
+# Tests that all the nodes in a graph can be printed out
+# In this case (1 node).
+
+# Create a graph
+CreateGraph graph1
+
+# Add a node
+AddNode graph1 n1
+
+# No edge created
+
+# Print the nodes in the graph
+ListNodes graph1

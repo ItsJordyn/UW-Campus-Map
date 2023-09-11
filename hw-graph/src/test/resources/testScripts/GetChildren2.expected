@@ -1,0 +1,21 @@
+# GetChildren2 testing file
+# Tests that the children nodes from a single node can be
+# Printed out (Case where every node is a child of another).
+
+# Create a graph
+created graph graph1
+
+# Add 3 nodes
+added node n1 to graph1
+added node n2 to graph1
+added node n3 to graph1
+
+# Add edges
+added edge e1 from n1 to n2 in graph1
+added edge e2 from n2 to n3 in graph1
+added edge e3 from n3 to n1 in graph1
+
+# Print the children from a node and the outgoing edges
+the children of n1 in graph1 are: n2(e1)
+the children of n2 in graph1 are: n3(e2)
+the children of n3 in graph1 are: n1(e3)

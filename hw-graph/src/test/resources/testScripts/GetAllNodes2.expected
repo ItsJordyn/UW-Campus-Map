@@ -1,0 +1,16 @@
+# GetAllNodes2 testing file
+# Tests that all the nodes in a graph can be printed out
+# In this case (2 nodes).
+
+# Create a graph
+created graph graph1
+
+# Add a pair of nodes
+added node n1 to graph1
+added node n2 to graph1
+
+# Add an edge
+added edge e1 from n1 to n2 in graph1
+
+# Print the nodes in the graph
+graph1 contains: n1 n2

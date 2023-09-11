@@ -1,0 +1,36 @@
+## CSE 331 hw-graph Coding Questions
+
+## Part 2
+###########################################################################
+
+Briefly explain why you included the operations you did and why you feel they are a sufficient
+interface to a graph. If your design includes multiple classes or interfaces, explain why you
+included each one; if not, explain whether you considered additional classes and why you decided
+not to include them.
+
+
+TODO: Your answer here!
+
+I included the operations of adding a node, adding an edge, retrieving the children from a node,
+retrieving the parents of a node (within the main CreateGraph class) because nodes and edges need
+to be added for the graph to be constructed, and retrieving the parents and children of a node
+tracks the path of the edges which I feel is important for a graph to understand the connections
+between vertexes. I included a class for Edge because it tracks where it originates and where it stems
+to on top of having its own independent label. Therefore, to keep track this I added methods getParent, getChild,
+and getLabel to track each of these things.
+
+
+## Part 3
+###########################################################################
+
+What was your testing strategy for this assignment? How do your script tests and JUnit tests
+differ from each other (if they do), and why?
+
+
+TODO: Your answer here!
+
+My testing strategy for the script tests was to make sure when I implemented something
+they were successfully implemented and created what I wanted them to do. Like add a node, an
+edge, retrieve the children etc. For JUnit my tests differed because they included testing the methods
+that weren't tested via the script tests. I tested my Edge class via jUnit by testing to see if the
+individual methods within the class work.

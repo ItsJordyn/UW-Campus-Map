@@ -1,0 +1,65 @@
+## CSE 331 HW6 Questions
+
+NOTE: This file is used as part of HW6, and is not due as part of the HW5
+submission. You may leave it blank for HW5.
+
+## Part 1
+###########################################################################
+
+A few examples of possible Graph representations:
+
+    A: A collection of nodes and a collection of edges.
+    B: An adjacency list, in which each node is associated with a list of its outgoing edges.
+    C: An adjacency matrix, which explicitly represents, for every pair ⟨A,B⟩ of nodes, whether there 
+       is a link from A to B, and how many.
+
+1. In two or three sentences, explain an advantage and a disadvantage of each of the
+representations listed above (for example, in terms of runtime complexity, space
+complexity, or ease of implementation).
+
+A) Graph representation would have easy implementation. The runtime complexity would be
+higher, however, since it would require more traversals.
+B) An adjacency list would be convenient for getting the children nodes by having
+a map with the parent node as keys and each representing a set of edges. A disadvantage,
+however, is it is a bit more difficult to implement.
+C) An adjacency matrix would be much more difficult to implement than the other two, yet
+the runtime would be more efficient, and it would have a higher space complexity.
+
+
+
+
+2. In two to three sentences, describe the representation you chose and explain why you
+chose it. If you chose to use a different representation than one of the three we described
+above, be sure to list its advantages and disadvantages, too.
+
+I chose representation A because, for starters, that method made the most sense in my
+mind, and I was able to visualize the implementation better, which I obviously thought
+was an important component. Honestly that method just makes the most sense to me. I
+feel comfortable with traversals and so traversing through my lists is not difficult.
+
+
+
+## Part 4
+###########################################################################
+
+    (Please keep your answers brief and to-the-point.)
+
+1. Describe any new tests you added and why you added them, or why you feel that your original
+tests alone are sufficient.
+
+I added a test case in which there are three nodes and each node is a child of one another
+(for example it kind of goes in a circle), so I made this test as an interesting case.
+I also added a case where there are duplicate edges added, (the program does not allow this,
+so it does not print out the duplicate edges). Added a test where a node has an edge pointing to
+itself (is its own child). Added a test with duplicate nodes.
+
+
+
+2. Did you make any changes to your specifications as you were implementing your Graph? (yes/no)
+If yes, describe your changes and why you made them.
+
+Yes, I changed the return type on my methods within my Edge methods because I originally had them
+return lists, which I realized made absolutely no sense since an edge has only one parent and one
+child so there would be no reason to return a list of parents or children. I also added a method
+called getAllEdges, so it would be easy to retrieve all the edges that are within my class.
+

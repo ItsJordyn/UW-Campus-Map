@@ -1,0 +1,15 @@
+# GetChildren4 testing file
+# Tests that the children nodes from a single node can be
+# Printed out (Node has an edge pointing to itself).
+
+# Create a graph
+CreateGraph graph1
+
+# Add three nodes
+AddNode graph1 n1
+
+#Add edges
+AddEdge graph1 n1 n1 e1
+
+# Print the nodes and the outgoing edges from n1
+ListChildren graph1 n1

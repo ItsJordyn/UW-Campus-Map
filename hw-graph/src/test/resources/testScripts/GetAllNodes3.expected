@@ -1,0 +1,15 @@
+# GetAllNodes3 testing file
+# Tests that all the nodes in a graph can be printed out
+# In this case (Duplicate nodes).
+
+# Create a graph
+created graph graph1
+
+# Add a pair of nodes
+added node n1 to graph1
+added node n1 to graph1
+
+# Add no edges
+
+# Print the nodes in the graph
+graph1 contains: n1

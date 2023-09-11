@@ -1,0 +1,14 @@
+# GetAllNodes1 testing file
+# Tests that all the nodes in a graph can be printed out
+# In this case (1 node).
+
+# Create a graph
+created graph graph1
+
+# Add a node
+added node n1 to graph1
+
+# No edge created
+
+# Print the nodes in the graph
+graph1 contains: n1

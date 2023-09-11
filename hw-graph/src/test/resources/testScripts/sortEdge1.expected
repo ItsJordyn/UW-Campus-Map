@@ -1,0 +1,26 @@
+# sortEdge1 testing file
+# Tests that all the nodes in a graph can be
+# printed out in alphabetical order and all
+# the edges are sorted alphabetically too
+
+# Create a graph
+created graph graph1
+
+# Add nodes
+added node n1 to graph1
+added node n2 to graph1
+added node n3 to graph1
+
+# Add edges
+added edge e1 from n1 to n2 in graph1
+added edge e2 from n2 to n3 in graph1
+added edge e3 from n3 to n1 in graph1
+added edge e4 from n1 to n2 in graph1
+added edge e5 from n1 to n2 in graph1
+added edge e6 from n2 to n3 in graph1
+added edge e7 from n3 to n1 in graph1
+
+# Print the children from a node and the outgoing edges
+the children of n1 in graph1 are: n2(e1) n2(e4) n2(e5)
+the children of n2 in graph1 are: n3(e2) n3(e6)
+the children of n3 in graph1 are: n1(e3) n1(e7)
