@@ -1,0 +1,21 @@
+# Tests the Dijkstra's algorithm for a complex graph.
+
+CreateGraph complexGraph
+
+AddNode complexGraph A
+AddNode complexGraph B
+AddNode complexGraph C
+AddNode complexGraph D
+AddNode complexGraph E
+
+AddEdge complexGraph A B 3.0
+AddEdge complexGraph A C 1.0
+AddEdge complexGraph A D 4.0
+AddEdge complexGraph B C 5.0
+AddEdge complexGraph B E 10.0
+AddEdge complexGraph C E 11.0
+AddEdge complexGraph C A 9.0
+AddEdge complexGraph E D 7.0
+AddEdge complexGraph D C 2.0
+
+FindPath complexGraph A E

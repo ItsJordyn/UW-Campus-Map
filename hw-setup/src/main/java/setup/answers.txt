@@ -1,0 +1,52 @@
+## CSE 331 hw-setup Questions
+## Part 7: Answering Questions About the Code
+
+1. Why did Fibonacci fail the testThrowsIllegalArgumentException< test? What (if anything) did
+you have to do to fix it? If you did not have to change anything to fix this issue, explain why.
+    It failed the test because the if statement stated that an IllegalArgumentException is thrown when
+    n is less than or equal to 0. Since the condition is that n can equal 0, it ignores that the index
+    can be equal to 0. The precondition states that the IllegalArgumentException is thrown only when the
+    value n is negative, therefore if n can be equal to 0, it is not negative. To fix this I changed the
+    condition in the if statement to if (n < 0).
+
+
+2. Why did Fibonacci fail the testBaseCase test? What (if anything) did you have to do to fix
+it? If you did not have to change anything to fix this issue, explain why.
+    The testBaseCase test failed because the base case of 0 throws an IllegalArgumentException
+    and claims that 0 is negative when 0 is a nonnegative number. To fix this I changed the
+    first if statement from if (n <= 0) to if (n < 0).
+
+
+3.Why did Fibonacci fail the testInductiveCase test? What (if anything) did you have to do to
+fix it? If you did not have to change anything to fix this issue, explain why.
+    Fibonacci failed the testInductiveCase test because  when the index of the sequence
+    is either 0 or 1, it should return 1 because the first two values of the fibonacci sequence is
+    the number 1. Since the inductive case is n <= 2, it means that the third value (index 2) of the
+    sequence (since the indexes start at 0) is 1, which is incorrect, as the third value of the sequence should be 2.
+    So I changed the condition from n <= 2 to n < 2, since we already dealt with if n is negative and therefore the only
+    two n values that can return a value of 1 is n is 0 or 1, which satisfies n < 2.
+
+
+## Part 8: Debugger Tutorial
+
+1. What are the values of "x", "y", and "sum" printed by your statement? Why was x not equal 
+to the first integer entered here, and how could we fix this?
+    The value x is 5, the value y is 4, and the sum printed is 0. X was not equal to the first
+    integer (5) because it first divided 5 by 2, equalling 2, then multiplied by 2 equalling 4.
+    Then it returned the difference rather than the sum (x-y) instead of (x+y). I changed int x
+    to int x = console.nextInt() so x is equal to the user given number.
+
+
+2. What are all the names and values listed in the “Variables” panel? What does the “frames” 
+tab list as the current method and line number? (Write down the text that was highlighted when 
+the Debug perspective first opened.)
+    x = 3
+    y = 4
+    computeSum:43, Adder (setup)
+
+
+
+
+3. What are all the names and values listed in the “Variables” panel after each of the two step overs?
+    Step over 1: x = 3, y = 4. Step Over 2: x = 3, y = 4, sum = -1.
+

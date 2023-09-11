@@ -1,0 +1,24 @@
+# Tests the Dijkstra's algorithm for a complex graph.
+
+created graph complexGraph
+
+added node A to complexGraph
+added node B to complexGraph
+added node C to complexGraph
+added node D to complexGraph
+added node E to complexGraph
+
+added edge 3.000 from A to B in complexGraph
+added edge 1.000 from A to C in complexGraph
+added edge 4.000 from A to D in complexGraph
+added edge 5.000 from B to C in complexGraph
+added edge 10.000 from B to E in complexGraph
+added edge 11.000 from C to E in complexGraph
+added edge 9.000 from C to A in complexGraph
+added edge 7.000 from E to D in complexGraph
+added edge 2.000 from D to C in complexGraph
+
+path from A to E:
+A to C with weight 1.000
+C to E with weight 11.000
+total cost: 12.000

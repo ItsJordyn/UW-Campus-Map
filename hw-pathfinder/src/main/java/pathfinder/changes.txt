@@ -1,0 +1,7 @@
+Briefly list any changes you made to your graph class during hw-pathfinder, and why you made those changes.
+
+- I added the method edgesOut to my graph class, so I can retrieve the outgoing edges from a node
+- turned off the debugger because my code was running way too long
+- removed my getParents method, never used it
+- Fixed the ListChildren command in the graph test driver
+
